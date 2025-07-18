@@ -161,12 +161,6 @@ function renderSite()
             </div>
             <div id="projects" class="clearfix">-projects loading-</div>    
         </div>
-        <!--
-        <div class="add-project if-loggedin hidden">
-            Add your own project:<br />
-            <div class="button" onclick="javascript:getForm('addProject');">add project</div>   
-        </div>
-        -->
     </div>
 
     <div id="helpers-section" class="clearfix">
