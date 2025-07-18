@@ -38,19 +38,19 @@ function renderSite()
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="<?=PROJ_NAME?>" />
     <meta name="keywords" content="Conflux, Ecosystem, CFX, Projects, Statistics, Information" />
+    <meta property="og:title" content="<?=PROJ_NAME?>" /> 
+    <meta property="og:url" content="https://cfx.tools/" /> 
+    <meta property="og:image" content="https://cfx_tools/eco.jpg" />
     <link rel="shortcut icon" href="ico.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="files/normalize.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-
     <link rel="stylesheet" href="files/style.css?<?=UI_VER?>" />
 </head>
 <body>
@@ -338,40 +338,9 @@ function renderSite()
     </script>
 
     <script type="text/javascript">let modal = null; let _createAppKit, _EthersAdapter, _mainnet, _confluxESpace, _confluxESpaceTestnet;</script>
-    <script type="text/javascript" src="files/ethers6.min.js"></script>
-   <!-- <script type="text/javascript" src="files/walletconnect.web3modal.js"></script>
-    <script type="text/javascript" src="files/walletconnect.web3provider.js"></script>
-    <script type="text/javascript" src="files/walletconnect.universalprovider.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.15.0/ethers.min.js"></script>
     <script type="module">
-        
-        /*
-        const projectId = 'a1fecde8027b92205ffcc8abb48819c8';
-
-        const espaceMainnet = {
-            chainId: 1,
-            name: 'Conflux ESpace',
-            currency: 'CFX',
-            explorerUrl: 'https://evm.confluxscan.net',
-            rpcUrl: "https://evm.confluxrpc.com",
-        };
-
-        const metadata = {
-            name: 'Conflux Ecosystem Site',
-            description: 'Learn about Conflux Ecosystem and browse Conflux ESpace projects',
-            url: 'https://cfx.tools',
-            icons: ['https://cfx.tools/cfx-eco.png']
-        };
-        */
-        /*
-        const espaceTestnet = {
-            chainId: 71,
-            name: 'Conflux ESpace Testnet',
-            currency: 'CFX',
-            explorerUrl: "https://evmtestnet.confluxscan.net/",
-            rpcUrl: "https://evmtestnet.confluxrpc.com",
-        };
-        */     
-
+         
         const projectId = 'a1fecde8027b92205ffcc8abb48819c8'
 
         // 2. Create your application's metadata object
@@ -400,24 +369,6 @@ function renderSite()
         _mainnet = mainnet;
         _confluxESpace = confluxESpace;
         _confluxESpaceTestnet = confluxESpaceTestnet;
-
-        /*
-        import { createWeb3Modal, defaultConfig } from './files/bundle/testbundle.mjs'
-        
-        modal = createWeb3Modal({
-            ethersConfig: defaultConfig({ metadata }),
-            chains: [espaceMainnet],
-            projectId
-        });
-        */
-
-        /*
-        modaltest = createWeb3Modal({
-            ethersConfig: defaultConfig({ metadata }),
-            chains: [espaceTestnet],
-            projectId
-        });
-        */
         
     </script>
     <script type="text/javascript" src="files/main.js?<?=UI_VER?>"></script>
